@@ -1,5 +1,5 @@
 OURA_CLIENT_ID=
 OURA_CLIENT_SECRET=
 OURA_ACCESS_TOKEN=
-DEFAULT_BEGIN_DATE=
-LOOKBACK_DAYS=
+DEFAULT_BEGIN_DATE=2000-01-01 # If there is no data yet saved to the file, this is the date to begin fetching (usually the day you got your Oura)
+LOOKBACK_DAYS=10 # If there is data saved to the file, how many days back should the script go? This is usually dependent on how often you run this script
