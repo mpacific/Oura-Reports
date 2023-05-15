@@ -1,7 +1,8 @@
 import dotenv from 'dotenv';
 import pleaseUpgradeNode from 'please-upgrade-node';
 import fs from 'fs';
-import updateReports from './lib/oura.js';
+import updateReportData from './lib/oura.js';
+import generateReports from './lib/output.js';
 
 dotenv.config();
 
@@ -12,7 +13,8 @@ pleaseUpgradeNode(packageJSON, {
 
 (async () => {
   try {
-    await updateReports();
+    await updateReportData();
+    await generateReports();
   } catch (error) {
     console.log(`Error during runtime: ${error}`);
     console.trace(error);
