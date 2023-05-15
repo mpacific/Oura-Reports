@@ -2,7 +2,7 @@ import dotenv from 'dotenv';
 import pleaseUpgradeNode from 'please-upgrade-node';
 import fs from 'fs';
 import updateReportData from './lib/oura.js';
-import generateReports from './lib/output.js';
+import generateReports from './lib/report.js';
 
 dotenv.config();
 
