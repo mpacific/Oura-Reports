@@ -8,6 +8,7 @@ module.exports = {
   },
   globals: {
     Chart: true,
+    jsonData: true,
   },
   extends: 'airbnb-base',
   overrides: [

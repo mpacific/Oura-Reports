@@ -5,4 +5,4 @@ data/*
 !log/.gitkeep
 !data/.gitkeep
 .DS_Store
-ui/lib/reportData.json
+ui/index.html
